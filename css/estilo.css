@@ -38,6 +38,11 @@ nav ul li a {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: translateY(-5px);
 }
 
 main {
@@ -48,9 +53,24 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1, .animated-welcome {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h2 {
@@ -74,7 +94,7 @@ p {
 }
 
 .Fotoservicio {
-    width: 150px;
+    width: 100px;
     height: auto;
     margin-left: 20px;
     border-radius: 10px;
@@ -148,157 +168,7 @@ footer {
     bottom: 0;
 }
 
-/* General */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-}
-
-header .logo {
-    width: 150px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    color: #666;
-}
-
-p {
-    line-height: 1.6;
-}
-
-/* Servicioss */
-.contenedorServicios {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #e0e0e0;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.fotoservicio {
-    width: 150px;
-    height: auto;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
-.contacto {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Contacto Formulario */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    position: relative;
-}
-
-.form-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #999;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.form-group .btn-formulario {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.form-group .btn-formulario:hover {
-    background-color: #555;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/*servicios */
+/* Servicios */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -379,3 +249,19 @@ footer {
         padding: 15px;
     }
 }
+
+.main-paragraph {
+    font-size: 18px; /* Tamaño de fuente aumentado */
+    font-family: 'Arial', sans-serif; /* Cambio de tipo de letra */
+    line-height: 1.8; /* Espaciado entre líneas aumentado */
+    text-align: justify; /* Alineación justificada */
+    color: #555; /* Color de texto modificado */
+    padding: 10px; /* Espaciado interno */
+    border-left: 5px solid #333; /* Borde izquierdo */
+}
+
+.main-paragraph:hover {
+    transform: scale(1.1); /* Aumento de escala al pasar el mouse */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
