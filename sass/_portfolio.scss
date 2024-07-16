@@ -1,0 +1,46 @@
+// Estilos para la sección de portfolio
+.portfolio {
+    background-color: $color-gray-light;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: $border-radius;
+    box-shadow: 0 0 10px $shadow-color;
+  
+    h2 {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+  
+      .grid-item {
+        background-color: $color-gray-light;
+        padding: 20px;
+        border-radius: $border-radius;
+        text-align: center;
+        box-shadow: 0 0 10px $shadow-color;
+        transition: box-shadow $animation-speed ease, transform $animation-speed ease;
+  
+        &:hover {
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          transform: translateY(-5px);
+        }
+  
+        p {
+          margin-bottom: 15px;
+          font-weight: bold;
+        }
+  
+        img {
+          width: 100%;
+          border-radius: $border-radius;
+        }
+      }
+    }
+  }
+  

@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal - Zenith Digital</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estyle.css">
+    <style>
+        /* Añadir estilos específicos para la página de Personal */
+        .main-title {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .member-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .member-subtitle {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .members-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .members-section__member {
+            width: 80%;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <a href="../index.html">
-            <img class="logo" src="../img/z d2.png" alt="Logo de Zenith">
+            <img class="logo" src="/img/logo definitivo.png" alt="Logo de Zenith">
         </a>
         <nav>
             <ul>
@@ -23,9 +57,36 @@
     </header>
     <main>
         <section class="intro">
-            <h1>Zenith Digital</h1>
-            <h2>¿Quiénes Somos?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <h1 class="main-title">Personal</h1>
+        </section>
+
+        <section class="members-section">
+            <div class="members-section__member">
+                <div class="members-section__member--info">
+                    <h1 class="member-title">Editor de Video</h1>
+                    <img src="../img/editor de videos foto persona.avif" alt="fotopersona1">
+                    <h4 class="member-subtitle">24 años</h4>
+                    <p class="Texto persona">Con años de experiencia en la edición de video, nuestro editor de 24 años es un experto en dar vida a las ideas a través de imágenes dinámicas y creativas. Su habilidad para contar historias visuales es inigualable, y se asegura de que cada proyecto sea impactante y memorable.</p>
+                </div>
+            </div>
+
+            <div class="members-section__member">
+                <div class="members-section__member--info">
+                    <h1 class="member-title">Community Manager</h1>
+                    <img src="../img/community manager foto persona.avif" alt="fotopersona2">
+                    <h4 class="member-subtitle">21 años</h4>
+                    <p class="Texto persona">Nuestra community manager de 21 años es una maestra en el arte de la comunicación digital. Con una profunda comprensión de las redes sociales, crea estrategias efectivas para conectar con el público, gestionar la reputación online y fomentar una comunidad leal y activa.</p>
+                </div>
+            </div>
+
+            <div class="members-section__member">
+                <div class="members-section__member--info">
+                    <h1 class="member-title">Desarrollador Web</h1>
+                    <img src="../img/desarrolador web foto persona.avif" alt="fotopersona3">
+                    <h4 class="member-subtitle">30 años</h4>
+                    <p class="Texto persona">Con 30 años, nuestro desarrollador web tiene una vasta experiencia en la creación de sitios web modernos y funcionales. Su enfoque en la usabilidad y el rendimiento asegura que cada proyecto no solo sea atractivo, sino también eficiente y fácil de usar.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

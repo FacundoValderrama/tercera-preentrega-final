@@ -1,0 +1,22 @@
+// Estilos generales
+body {
+    font-family: $font-family;
+    background-color: $color-background;
+    color: $color-text;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  // Ajuste de margen superior del contenido
+  main {
+    padding: 20px;
+    margin: 80px auto 0 auto;
+    background-color: $color-white;
+    border-radius: $border-radius;
+    box-shadow: 0 0 10px $shadow-color;
+    max-width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
